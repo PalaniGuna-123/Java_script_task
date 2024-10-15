@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Multiple Elements</title>
+</head>
+<body>
+    <div class="color-box">Box 1</div>
+    <div class="color-box">Box 2</div>
+    <div class="color-box">Box 3</div>
+    <button id="changeColorsButton">Change Colors</button>
+    <script>
+        document.getElementById('changeColorsButton').addEventListener('click', function() {
+    const boxes = document.getElementsByClassName('color-box');
+    for (let box of boxes) {
+        box.style.backgroundColor = 'lightgreen';
+    }
+});
+
+    </script>
+</body>
+</html>

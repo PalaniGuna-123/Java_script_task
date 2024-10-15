@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Class Example</title>
+    <style>
+        .highlight {
+            background-color: rgb(0, 255, 149);
+        }
+    </style>
+</head>
+<body>
+    <p class="text">Toggle my background color!</p>
+    <button id="toggleButton">Toggle Highlight</button>
+    <script>document.getElementById('toggleButton').addEventListener('click', function() {
+        document.querySelector('.text').classList.toggle('highlight');
+    });
+    </script>
+</body>
+</html>

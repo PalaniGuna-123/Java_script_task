@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Item Example</title>
+</head>
+<body>
+    <ul id="itemList">
+        <li class="list-item">Item 1</li>
+        <li class="list-item">Item 2</li>
+        <li class="list-item">Item 3</li>
+    </ul>
+    <button id="removeItemsButton">Remove Items</button>
+    <script>
+        document.getElementById('removeItemsButton').addEventListener('click', function() {
+    const items = document.querySelectorAll('.list-item');
+    items.forEach(item => item.remove());
+});
+
+
+    </script>
+</body>
+</html>
